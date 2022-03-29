@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gioco di papa'</title>
+</head>
+
+<body>
+    <h3> Hai a disposizione 10 tentativi per indovinare un mumero da uno a cento.<br>Il numero da indovinare verrà
+        creato
+        automaticamente in maniera casuale dal sistema facendo click su start.</h3>
+    <hr>
+    <div>
+        <p>Se premi il bottone - start - il sistema genera un numero casuale</p>
+        <button onclick="casuale()"> start</button>
+        <h4 id="cas"> N</h4>
+    </div>
+    <hr>
+    <p>Ora inserisci i numeri e vediamo se in 10 tentaivi riesci ad indovinare il numero</p>
+    <input id="numb" placeholder="insert number">
+    <button onclick="myFunction(); conta(); ">Submit</button>
+
+    <h3 id="ab">alto o basso</h3>
+    <h3> Tentativi : <span id="ine"> </span></h3>
+    <h4 id="i"></h4>
+
+    <button onclick="reset()">reset</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
